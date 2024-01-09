@@ -13,17 +13,17 @@
   <section>
     <!-- Top nav bar -->
     <header class="header">
+      <button class="header__menu-button">
+        <span class="header__menu-button-span"></span>
+        <span class="header__menu-button-span"></span>
+        <span class="header__menu-button-span"></span>
+      </button>
       <nav class="header__nav-bar">
-        <div class="header__links">
-          <button class="header__button">Home</button>
-          <button class="header__button">Gallery</button>
-          <button class="header__button">Contact</button>
+        <div class="header__links hidden">
+          <a class="header__link" href="/index.html">Home</a>
+          <a class="header__link" href="/menu.html">Menu</a>
+          <a class="header__link">Contact</a>
         </div>
-        <button class="header__menu-button">
-          <span class="header__menu-button-span"></span>
-          <span class="header__menu-button-span"></span>
-          <span class="header__menu-button-span"></span>
-        </button>
       </nav>
     </header>
     <!-- Hero image -->
@@ -52,42 +52,42 @@
 
     <!-- Main content -->
     <div class="main-section__menu">
-      <a href="#">
-        <div class="main-section__menu-img-container">
+      <div class="main-section__menu-img-container">
+        <a class="main-section__menu-link" href="#">
           <img class="main-section__menu-img" src="/images/nachos.jpg" alt="nachos">
           <p class="menu-text">Starters & Grill Menu</p>
-        </div>
-      </a>
-      <a href="">
-        <div class="main-section__menu-img-container">
+        </a>
+      </div>
+      <div class="main-section__menu-img-container">
+        <a class="main-section__menu-link" href="">
           <img class="main-section__menu-img" src="/images/Fish_and_chips.jpg" alt="fish and chips">
           <p class="menu-text">Traditional Favourites</p>
-        </div>
-      </a>
-      <a href="">
-        <div class="main-section__menu-img-container">
+        </a>
+      </div>
+      <div class="main-section__menu-img-container">
+        <a class="main-section__menu-link" href="">
           <img class="main-section__menu-img" src="/images/Pizza-2.jpg" alt="pizza">
           <p class="menu-text">Pizzas</p>
-        </div>
-      </a>
-      <a href="">
-        <div class="main-section__menu-img-container">
+        </a>
+      </div>
+      <div class="main-section__menu-img-container">
+        <a class="main-section__menu-link" href="">
           <img class="main-section__menu-img" src="/images/vegan.jpg" alt="vegan dish">
           <p class="menu-text">Vegan & Vegetarian</p>
-        </div>
-      </a>
-      <a href="">
-        <div class="main-section__menu-img-container">
+        </a>
+      </div>
+      <div class="main-section__menu-img-container">
+        <a class="main-section__menu-link" href="">
           <img class="main-section__menu-img" src="/images/roast.jpg" alt="roast dinner">
           <p class="menu-text">Traditonal Sunday Lunch</p>
-        </div>
-      </a>
-      <a href="">
-        <div class="main-section__menu-img-container">
+        </a>
+      </div>
+      <div class="main-section__menu-img-container">
+        <a class="main-section__menu-link" href="">
           <img class="main-section__menu-img" src="/images/childrens.jpg" alt="fish fingers and chips">
           <p class="menu-text">Childrens Menu</p>
-        </div>
-      </a>
+        </a>
+      </div>
 
     </div>
 
@@ -104,7 +104,7 @@
           <img class="footer__arrow " src="/images/white-arrow-png-41944.png" alt="">
         </button>
       </div>
-      <div class="footer__text footer__section-hidden">
+      <div class="footer__text hidden">
         <div class="footer__divider"></div>
         <div class="footer__day">
           <span>Monday - Thursday</span><span>12:00 - 22:00</span>
@@ -124,12 +124,12 @@
           Contact Us
         </h4>
         <button class="footer__arrow-button">
-          <img class="footer__arrow " src="/images/white-arrow-png-41944.png" alt="">
+          <img class="footer__arrow" src="/images/white-arrow-png-41944.png" alt="">
         </button>
       </div>
-      <div class="footer__section-hidden">
+      <div class="footer__text hidden">
         <div class="footer__divider"></div>
-        <div class="footer__text">
+        <div>
           <p>
             The Woolpack
             <br />
@@ -148,6 +148,7 @@
         </div>
       </div>
   </footer>
+  <script src="index.js"></script>
 
 </body>
 

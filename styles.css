@@ -12,11 +12,12 @@ html {
 
 body {
   background-color: rgb(242, 246, 250);
-  font-family: helvetica, arial, sans-serif;
+  font-family: 'Libre Caslon Text', arial, sans-serif;
   line-height: 1.6;
 }
 
-button {
+button,
+a {
   cursor: pointer;
   padding: 0;
 }
@@ -25,7 +26,6 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Libre Caslon Text', serif;
   font-weight: normal;
 }
 
@@ -45,33 +45,39 @@ h4 {
 
 .header__links {
   display: flex;
-  margin-right: 15rem;
+  margin-right: 8%;
   height: 4rem;
   justify-content: space-between;
-  width: 25rem;
+  width: 28%;
 }
 
-.header__button {
+.header__link {
   background: none;
   border: none;
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  padding-top: .5rem;
+  text-decoration: none;
 }
 
 .header__menu-button {
   display: none;
 }
 
-.header__menu-image {}
-
 /* HERO SECTION */
 .hero__image-container {
   display: flex;
   justify-content: center;
-  max-height: 100vh;
-  max-width: 100vw;
+  height: 100vh;
+  width: 100%;
   overflow: hidden;
   position: relative;
+}
+
+.hero__image {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
 }
 
 .hero__welcome {
@@ -263,8 +269,38 @@ h4 {
 @media (max-width: 810px) {
 
   /* NAV BAR */
+  .header--cover {
+    background-color: rgba(0, 0, 0, 0.421);
+    height: 100vh;
+    position: fixed;
+    width: 100vw;
+    z-index: 99;
+  }
+
+  .nav-bar--open {
+    background-color: rgb(157, 34, 53);
+    height: 100vh;
+    right: 0;
+    width: 70vw;
+  }
+
   .header__links {
-    display: none;
+    flex-direction: column;
+    height: 25rem;
+    justify-content: space-between;
+    left: 15%;
+    position: absolute;
+    z-index: -110;
+  }
+
+  .header__link {
+    font-size: 3.5rem;
+  }
+
+  .header__button {
+    font-size: 2.5rem;
+    text-align: left;
+    width: fit-content;
   }
 
   .header__menu-button {
@@ -275,9 +311,13 @@ h4 {
     justify-content: space-around;
     height: 2.5rem;
     line-height: 0;
-    margin-right: 1.6rem;
-    width: 3.4rem;
     padding: 0;
+    position: fixed;
+    right: 1.8rem;
+    top: 1rem;
+    transform: ease 1s;
+    width: 3.4rem;
+    z-index: 99;
   }
 
   .header__menu-button-span {
@@ -285,15 +325,40 @@ h4 {
     background-color: white;
     height: .2rem;
     width: 100%;
+    transition: ease .15s;
+  }
+
+  .line-1 {
+    left: .6rem;
+    position: absolute;
+    transform: rotate(45deg);
+    transition: ease-in-out .15s;
+  }
+
+  .line-2 {
+    visibility: hidden;
+  }
+
+  .line-3 {
+    left: .6rem;
+    position: absolute;
+    transform: rotate(-45deg);
+    transition: ease-in-out .15s;
+  }
+
+  /* MAIN SECTION */
+  .main-section {
+    margin: 0;
+  }
+
+  .main-section__text {
+    max-width: 80%;
   }
 
   /* FOOTER */
-  .footer__section-hidden {
-    display: none
-  }
-
   .footer__container {
     flex-direction: column;
+    margin: 0;
     padding: 3rem 2rem 1rem;
   }
 
@@ -312,6 +377,10 @@ h4 {
     font-size: 2.3rem;
   }
 
+  .footer__text {
+    font-size: 1.3rem;
+  }
+
   .footer__arrow-button {
     background: none;
     border: none;
@@ -321,6 +390,14 @@ h4 {
   .footer__arrow {
     height: 3.68rem;
     width: 3.2rem;
+  }
+
+  .arrow-inverted {
+    transform: rotate(180deg);
+  }
+
+  .hidden {
+    display: none;
   }
 }
 
@@ -346,10 +423,13 @@ h4 {
   height: 50vh;
 }
 
+.main-section__menu-link {
+  width: 100%;
+}
+
 .main-section__menu-img {
-  height: 40rem;
-  min-height: 100%;
-  min-width: 100%;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -365,6 +445,24 @@ h4 {
 }
 
 /* SMALLER SCREENS */
-@media (max-width:1px) {
+@media (max-width:1000px) {
+  .main-section__menu {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .main-section__menu-img-container {
+    height: 30vh;
+  }
+
+  .menu-text {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 810px) {
+  .main-section__menu {
+    margin: 0 0 1rem;
+    max-width: 100vw;
+  }
 }
