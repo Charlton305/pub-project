@@ -402,7 +402,7 @@ h4 {
 }
 
 
-/* STYLES FOR MENU PAGE */
+/* STYLES FOR MENUS PAGE */
 /* ------------------- */
 /* ------------------ */
 
@@ -464,5 +464,120 @@ h4 {
   .main-section__menu {
     margin: 0 0 1rem;
     max-width: 100vw;
+  }
+}
+
+/* STYLES FOR INNER MENU */
+/*------------------ */
+/*----------------- */
+
+.main-section__header-container--menu {
+  margin: 8rem auto 9rem;
+}
+
+.menu__content-container {
+  margin: -2rem auto 0;
+  max-width: 70vw;
+}
+
+.main-section__sub-heading {
+  font-size: 3rem;
+}
+
+.menu__divider {
+  border: 1px solid black;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  width: 100%
+}
+
+.menu__divider--dotted {
+  border: none;
+  border-bottom: 1px dashed #949798;
+}
+
+.menu__content__text-container--style-1 {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.menu__content__text-container--style-2 {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 5rem 5rem 5rem;
+  margin-bottom: 1rem;
+}
+
+.menu__flex-container {
+  display: flex;
+  justify-content: space-between;
+  min-height: 5rem;
+  width: 100%;
+}
+
+.menu__items {
+  font-size: 1.7rem;
+  margin: 1rem;
+  margin-bottom: 3rem;
+}
+
+.menu__items--name {
+  font-weight: 900;
+}
+
+.menu__items--dessert {
+  margin-top: 3rem;
+}
+
+.menu__items--options {
+  font-size: 1.5rem;
+  margin-top: -1rem;
+  margin-right: 5rem;
+}
+
+.menu__flags {
+  margin: 0 auto;
+  line-height: 3rem;
+  margin-bottom: 6rem;
+  margin-top: 6rem;
+  width: 35rem;
+}
+
+.menu__flags-text {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.gf-span {
+  color: #8628D6;
+  font-weight: 900;
+}
+
+.v-span {
+  color: #62a541;
+  font-weight: 900;
+}
+
+.vg-span {
+  color: #ffc000;
+  font-weight: 900;
+}
+
+/* SMALLER SCREENS */
+@media (max-width: 810px) {
+  .menu__content__text-container--style-2 {
+    display: block;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+  }
+
+  .menu__content-container {
+    max-width: 90vw;
+  }
+
+  .menu__divider {
+    /* width: 90% */
   }
 }
