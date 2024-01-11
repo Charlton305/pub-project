@@ -29,11 +29,10 @@ h4 {
   font-weight: normal;
 }
 
-
 /* HEADER */
 .header__nav-bar {
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.421);
+  background-color: rgba(0, 0, 0, 0.678);
   display: flex;
   height: 4.5rem;
   justify-content: end;
@@ -45,10 +44,10 @@ h4 {
 
 .header__links {
   display: flex;
-  margin-right: 8%;
   height: 4rem;
   justify-content: space-between;
-  width: 28%;
+  margin-right: 8%;
+  width: 25rem;
 }
 
 .header__link {
@@ -69,9 +68,9 @@ h4 {
   display: flex;
   justify-content: center;
   height: 100vh;
-  width: 100%;
   overflow: hidden;
   position: relative;
+  width: 100%;
 }
 
 .hero__image {
@@ -83,6 +82,7 @@ h4 {
 .hero__welcome {
   color: white;
   font-size: 7rem;
+  padding-bottom: 2rem;
   position: absolute;
   text-align: center;
   top: 30%;
@@ -133,8 +133,8 @@ h4 {
 
 .flex-item {
   min-height: 80vh;
-  width: 50%;
   text-align: center;
+  width: 50%;
 }
 
 .main-section__img-container {
@@ -324,8 +324,8 @@ h4 {
     display: block;
     background-color: white;
     height: .2rem;
-    width: 100%;
     transition: ease .15s;
+    width: 100%;
   }
 
   .line-1 {
@@ -417,10 +417,10 @@ h4 {
 
 .main-section__menu-img-container {
   display: flex;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
   height: 50vh;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
 .main-section__menu-link {
@@ -429,8 +429,8 @@ h4 {
 
 .main-section__menu-img {
   height: 100%;
-  width: 100%;
   object-fit: cover;
+  width: 100%;
 }
 
 .menu-text {
@@ -482,6 +482,7 @@ h4 {
 
 .main-section__sub-heading {
   font-size: 3rem;
+  margin-top: 2rem;
 }
 
 .menu__divider {
@@ -498,7 +499,7 @@ h4 {
 
 .menu__content__text-container--style-1 {
   margin-bottom: 1rem;
-  margin-top: 2rem;
+  margin-top: 0;
 }
 
 .menu__content__text-container--style-2 {
@@ -518,7 +519,6 @@ h4 {
 .menu__items {
   font-size: 1.7rem;
   margin: 1rem;
-  margin-bottom: 3rem;
 }
 
 .menu__items--name {
@@ -531,15 +531,18 @@ h4 {
 
 .menu__items--options {
   font-size: 1.5rem;
-  margin-top: -1rem;
   margin-right: 5rem;
+  margin-top: -1rem;
+}
+
+.menu__items--info {
+  font-size: 1.8rem;
+  font-style: italic;
 }
 
 .menu__flags {
-  margin: 0 auto;
   line-height: 3rem;
-  margin-bottom: 6rem;
-  margin-top: 6rem;
+  margin: 3rem auto 4rem;
   width: 35rem;
 }
 
@@ -577,7 +580,76 @@ h4 {
     max-width: 90vw;
   }
 
-  .menu__divider {
-    /* width: 90% */
+  .main-section__heading--small {
+    font-size: 2.5rem;
+  }
+}
+
+/* STYLES FOR CONTACT US PAGE */
+/* ------------------------- */
+/* ------------------------ */
+
+.contact-us__outer-content-container {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  padding: 2rem;
+  width: 50%;
+  #
+}
+
+.contact-us__content-container {
+  height: 50%;
+}
+
+.contact-us__text-heading {
+  font-size: 4rem;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 8px;
+}
+
+.contact-us__day {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem 2.6rem;
+}
+
+.contact-us__map {
+  height: 100%;
+  width: 100%;
+}
+
+.contact-us__text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.contact-us__map-heading {
+  font-size: 3rem;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 8px;
+}
+
+.contact-us__text {
+  font-size: 1.5rem;
+}
+
+/* SMALLER SCREENS */
+@media (max-width: 1000px) {
+  .contact-us__header-container {
+    margin-bottom: 3rem;
+  }
+
+  .contact-us__outer-content-container {
+    width: 100%;
+  }
+
+  .contact-us__sub-heading {
+    font-size: 2rem;
   }
 }
