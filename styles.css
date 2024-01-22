@@ -647,6 +647,7 @@ h4 {
 
   .contact-us__outer-content-container {
     width: 100%;
+    height: auto;
   }
 
   .contact-us__sub-heading {
